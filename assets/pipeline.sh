@@ -21,11 +21,13 @@ if [[ -z "${message// }" ]]
         message=$"COMPX341-22A-A3 Committing from CI/CD Pipeline"
 fi
 
+cd ..
+git add .
+git commit -m "$message"
+git push
+
 echo "(3) Application Start"
+cd assets
 npm run start
-
-
-message="$1"
-echo "$1"
 
     
