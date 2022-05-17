@@ -1,4 +1,13 @@
 #1547884
+
+message="$1"
+if [[ -z "${message// }" ]]
+    then
+        echo "No commit message has been provided"
+        echo "Usage: (sh) pipeline.sh <Commit Messgae>"
+        exit
+fi
+
 echo "(0) Npm Installing"
 if npm install; then
     echo "Npm succsesfully installed)"
@@ -16,14 +25,6 @@ else
 fi
 
 echo "(2) Commit and Pushing to repo"
-message="$1"
-if [[ -z "${message// }" ]]
-    then
-        echo "No commit message has been provided"
-        echo "Usage: (sh) pipeline.sh <Commit Messgae>"
-        exit
-fi
-
 cd ..
 git add .
 git commit -m "$message"
