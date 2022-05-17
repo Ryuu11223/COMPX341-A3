@@ -1,3 +1,4 @@
+//Name: Pasindu Danawala Gamage, ID: 1547884
 //
 // In production, we register a service worker to serve assets from local cache.
 

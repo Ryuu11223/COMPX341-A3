@@ -5,7 +5,6 @@ for filename in **/*.ts; do
 done
 
 echo "(1) Commit and Pushing to repo"
-cd ..
 git add .
-git commit -m "$message"
+git commit -m "COMPX341-22A-Maintenace commit message"
 git push
