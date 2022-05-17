@@ -19,7 +19,8 @@ echo "(2) Commit and Pushing to repo"
 message="$1"
 if [[ -z "${message// }" ]]
     then
-        message=$"COMPX341-22A-A3 Committing from CI/CD Pipeline"
+        echo "No commit message has been provided"
+        echo "Usage: (sh) pipeline.sh <Commit Messgae>"
 fi
 
 cd ..
