@@ -12,7 +12,7 @@ interface BestSellersState {
   books: { bookId: any; }[];
 }
 
-//export default class BestSellers extends React.Component<BestSellersProps, BestSellersState> {
+export default class BestSellers extends React.Component<BestSellersProps, BestSellersState> {
   constructor(props: BestSellersProps) {
     super(props);
 
