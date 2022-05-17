@@ -21,6 +21,7 @@ if [[ -z "${message// }" ]]
     then
         echo "No commit message has been provided"
         echo "Usage: (sh) pipeline.sh <Commit Messgae>"
+        exit
 fi
 
 cd ..
